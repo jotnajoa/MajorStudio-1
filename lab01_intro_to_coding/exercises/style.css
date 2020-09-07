@@ -1,0 +1,16 @@
+.petals:hover{
+    opacity:0.5;
+    transform:scale(1.5);
+    box-shadow:1px 1px 1px rgb(197, 84, 84)
+}
+
+.sepals:hover{
+    opacity:0.5;
+    transform:scale(1.5);
+    box-shadow:1px 1px 1px rgb(84, 137, 197)
+}
+.newcanvas{
+    border:1px solid greenyellow;
+    box-shadow:5px 5px 5px blueviolet;
+    transform:translate(50px,50px)
+}
