@@ -1,0 +1,15 @@
+.frame{
+    display:grid;
+    width:600px;
+    height:600px;
+    grid-template-rows: repeat(3,200px);
+    grid-template-columns: repeat(3,200px);
+}
+.frame > img{
+    border:0.5px solid grey;
+    opacity:0.4;
+}
+
+.frame > img:hover{
+    opacity:1;
+}

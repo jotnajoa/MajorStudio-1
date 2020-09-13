@@ -2,14 +2,14 @@
 // check API documentation for search here: http://edan.si.edu/openaccess/apidocs/#api-search-search
 
 // put your API key here;
-const apiKey = "";  
+const apiKey = "5U8v4uYHlcAegr2Us9SaDTLVBcMythWYs8dUU8Rj";  
 
 // search base URL
 const searchBaseURL = "https://api.si.edu/openaccess/api/v1.0/search";
 
 // Constructing the search query
 const search =  `mask AND unit_code:"FSG"` + "&start=" + 0 + "&rows=" + 50;
-
+const mysearch = 'face AND date:1630s' + '&start='+0+'&rows='+10;
 // array that we will write into
 let myArray = [];
 
@@ -46,4 +46,4 @@ function addObject(objectData) {
   console.log("object at index", index, myArray[index]);
 }
 
-fetchSearchData(search);
+fetchSearchData(mysearch);
