@@ -28,13 +28,13 @@ const storeIDs = (object)=>{
 function displayimages (array) {
   // array receives an element with specific index number
   // Need to parse img src from another fetch function I used for the first assignment
-
+  console.log('image sources are', array)
   let frame=document.querySelector('.frame')
   let imagesource=document.createElement('IMG')
   imagesource.setAttribute('src',array)
   // the parameter for the function should be the img url
 
-  imagesource.setAttribute('width','100%');
+  imagesource.setAttribute('width','10%');
 
   frame.appendChild(imagesource)
 
@@ -65,7 +65,7 @@ function fetchSearchData(searchTerm) {
 
     }).then((k)=>{
       console.log('src passed having data:',k)
-      k.forEach(displayimages(k))
+      k.forEach((l)=>{displayimages(l)})
     })
     // .catch(error => {
     //   console.log(error);
@@ -78,29 +78,26 @@ fetchSearchData(mysearch);
 
   function scrappingSRC(d) {
   console.log('things to be scrapped for SRC is ',d)
-  storeSRC.push(fetchSRC(d));
-  // 여기서 잘못됨
-
-  console.log(storeSRC)
+  fetchSRC(d).then((k)=>{storeSRC.push(k)}).then(()=>{console.log(storeSRC)})
 
   }
 
 
-function fetchSRC(input) {
+async function fetchSRC(input) {
   // ID array를 받아서 src를 뱉어내는 역할을 해야함
 
   let imgurl = "https://api.si.edu/openaccess/api/v1.0/content/";
   let imgsrcurl= imgurl + input + "?api_key="+apiKey;
   let contents;
 
-  fetch(imgsrcurl)
+  await fetch(imgsrcurl)
   .then(res => res.json())
   .then((data)=>{
     console.log('data is',data)
     contents=data.response.content.descriptiveNonRepeating.online_media.media[0].thumbnail
-    
-    // to access thumbnail, contents[i].thumbnail  is necessary
+    console.log(contents)
   })
+
   console.log('contents return is:',contents)
   return contents
 

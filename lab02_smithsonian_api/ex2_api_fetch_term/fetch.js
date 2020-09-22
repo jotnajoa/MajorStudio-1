@@ -18,9 +18,9 @@ function fetchTermsData(termCategory) {
       // it returns only terms classificatino only,(metadata container)
 
       console.log('response itself is :',data.response)
-      console.log('terms output is:',data.response.terms);
+      // console.log('terms output is:',data.response.terms);
 
-      console.log(`There are ${data.response.terms.length} terms in the term category: ${termCategory}`);
+      // console.log(`There are ${data.response.terms.length} terms in the term category: ${termCategory}`);
     })
     .catch(error => {
       console.log(error);
@@ -28,9 +28,7 @@ function fetchTermsData(termCategory) {
   }
 let categories=['culture','data_source','date','object_type','online_media_type','place','topic','unit_code']
 
-categories.forEach((t)=>{
-  fetchTermsData(t)
-})
+fetchTermsData('data_source')
 
 
 
