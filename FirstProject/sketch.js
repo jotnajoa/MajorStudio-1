@@ -7,7 +7,7 @@ let entryclick=false;
 
 function preload(){
   humanSpritedata=loadJSON('https://raw.githubusercontent.com/jotnajoa/MajorStudio-1/master/FirstProject/animationJSON/humansprite.json');
-  humanImageSheet=loadImage('https://github.com/jotnajoa/MajorStudio-1/blob/master/FirstProject/imgs/entryhuman.png');
+  humanImageSheet=loadImage('https://raw.githubusercontent.com/jotnajoa/MajorStudio-1/master/FirstProject/imgs/entryhuman.png');
 }
 
 function setup(){
