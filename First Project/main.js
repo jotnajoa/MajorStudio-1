@@ -40,7 +40,7 @@ function preload(){
 // iterate through the entire table, if year == 1950s, put that into 1950 table
 // 이런식으로 연도별로 데이터를 분류해서 넣도록 해볼까? 아주좋은생각인듯
 // preload function in p5js is asynchronous function
-setTimeout(()=>{
+
 function setup(){
     
 frameRate(50)
@@ -153,7 +153,6 @@ function mouseWheel(event) {
     //uncomment to block page scrolling
     //return false;
   }
-},1000)
 
 function fillData(object,years){
     // object의 years가 특정 연도인 녀석을 targetData object의 특정 연도 key에 맞춰서 push in!
