@@ -6,8 +6,8 @@ let entryclick=false;
 
 
 function preload(){
-  humanSpritedata=loadJSON('../animationJSON/humansprite.json');
-  humanImageSheet=loadImage('../imgs/entryhuman.png');
+  humanSpritedata=loadJSON('https://raw.githubusercontent.com/jotnajoa/MajorStudio-1/master/FirstProject/animationJSON/humansprite.json');
+  humanImageSheet=loadImage('https://github.com/jotnajoa/MajorStudio-1/blob/master/FirstProject/imgs/entryhuman.png');
 }
 
 function setup(){
