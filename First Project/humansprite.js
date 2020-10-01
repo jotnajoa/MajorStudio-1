@@ -21,6 +21,5 @@ class Sprite{
 
     animate(){
     this.index = this.index+this.speed;
-
     }
 }

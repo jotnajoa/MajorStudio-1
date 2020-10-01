@@ -7,6 +7,7 @@ class Sprite{
     y=0;
 
 
+
     constructor(speed,animation,x,y){
         this.animation=animation;
         this.len=this.animation.length
@@ -22,6 +23,9 @@ class Sprite{
     animate(){
     this.index = this.index+this.speed;
     this.x = this.index
+    }
+
+    cons(){
 
     }
 }
