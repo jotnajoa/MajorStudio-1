@@ -33,7 +33,7 @@ let letterposition;
 
 
 function preload(){
-    dataJoint = loadTable('../data/data_refined.csv', 'csv', 'header');
+    dataJoint = loadTable('https://raw.githubusercontent.com/jotnajoa/MajorStudio-1/master/FirstProject/data/data_refined.csv', 'csv', 'header');
     console.log('table is loaded',dataJoint)
 }
 
@@ -43,7 +43,7 @@ function preload(){
 
 function setup(){
     
-frameRate(50)
+frameRate(200)
 circleRadius=10
 cheight = $(window).height()
 cwidth = $(window).width()
