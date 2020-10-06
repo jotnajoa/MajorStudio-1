@@ -44,7 +44,7 @@ function preload(){
 function setup(){
     
 frameRate(200)
-circleRadius=10
+circleRadius=15
 cheight = $(window).height()
 cwidth = $(window).width()
 createCanvas(cwidth,cheight);
