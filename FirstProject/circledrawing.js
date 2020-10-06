@@ -24,21 +24,21 @@ class circle{
         if(this.origintrigger){
             // 해당하는 continent의 x좌표보다 작은 경우 조금씩 더해나가고, 큰 경우 조금씩 빼나간다.
             if(this.xcoord>this.continent
-                && this.ycoord<height-margin.bottom-120){
+                && this.ycoord<height-margin.bottom-150){
                 this.xcoord=this.xcoord-10;
                 this.ycoord=this.ycoord+10;
             } 
             
             else if (this.xcoord<this.continent
-                && this.ycoord<height-margin.bottom-120){
+                && this.ycoord<height-margin.bottom-150){
                 this.xcoord=this.xcoord+10;
                 this.ycoord=this.ycoord+10;
             }
 
-            else if(this.ycoord>height-margin.bottom-120){
+            else if(this.ycoord>height-margin.bottom-150){
 
-                this.xcoord=this.continent+(this.index%8)*15
-                this.ycoord=630-(Math.floor( (this.index)/8 )*10)
+                this.xcoord=this.continent+(this.index%8)*18
+                this.ycoord=630-(Math.floor( (this.index)/8 )*11)
             }
 
         }
