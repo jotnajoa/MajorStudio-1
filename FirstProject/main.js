@@ -8,7 +8,7 @@ var colorscheme=["#4e79a7","#f28e2c","#e15759","#76b7b2","#59a14f","#edc949","#a
 var genres=[];
 var place=["North America","Europe","Asia","South America","Oceania","Unknown+ETC"];
 var margin={top:0, left:100, right:50, bottom:50};
-var rectwidth=220;
+var rectwidth=250;
 var rectheight=15;
 var cLocation;
 var mediumtypes,myColor;var ncircles=[];var ecircles=[];var acircles=[];
